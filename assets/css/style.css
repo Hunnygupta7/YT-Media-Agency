@@ -172,6 +172,7 @@ body {
   color: var(--white);
 }
 
+
 .btn-primary:is(:hover, :focus) { --bittersweet: hsl(2, 90%, 65%); }
 
 .btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
@@ -464,19 +465,37 @@ header .container {
 
 .contact-banner img { width: 100%; }
 
-.input-wrapper { margin-bottom: 30px; }
+.contact-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-form {
+  width: 100%;
+
+}
+
+.input-wrapper { 
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ }
 
 .input-label {
   color: var(--oxford-blue);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   margin-bottom: 10px;
+  width: fit-content;
 }
 
 .input-field {
   border-bottom: 1px solid var(--platinum);
   padding: 7px 0;
   font-size: var(--fs-6);
+ 
 }
 
 .input-field::placeholder { color: var(--silver-chalice); }
@@ -990,7 +1009,7 @@ footer .logo { margin-bottom: 30px; }
 
   .contact-title { text-align: left; }
 
-  .contact-form { width: 50%; }
+  .contact-form { width: 100%; }
 
 
 
